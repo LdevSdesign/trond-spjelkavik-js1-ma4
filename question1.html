@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .error {
+        color: red;
+        display: none;
+      }
+      body {
+        text-align: center;
+      }
+      form {
+        margin-top: 10vh;
+      }
+      input {
+        margin: 2rem;
+      }
+      #firstName {
+        width: 20%;
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="contactForm">
+      <div>
+        <input
+          type="text"
+          id="firstName"
+          placeholder="First name (minimum 2 characters)"
+        />
+        <div id="firstNameError" class="error">
+          Your first name must be at least 2 characters
+        </div>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <script src="./question1.js" async defer></script>
+  </body>
+</html>
